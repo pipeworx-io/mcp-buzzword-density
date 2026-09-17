@@ -77,3 +77,13 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+```bash
+curl -X POST https://gateway.pipeworx.io/v1/tools/buzzword_density_analyze \
+  -H 'Content-Type: application/json' \
+  -d '{"content":"We need to leverage our core competencies to synergize stakeholder value and create a paradigm shift in the marketplace through disruptive innovation.","industry":"consulting","roast":true}'
+```
+
+No account needed for the first calls. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/buzzword_density_analyze`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
