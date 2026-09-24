@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-buzzword-density",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "buzzword-density MCP — wraps StupidAPIs (keyless — no credential needed)",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-e45079102740747149dfcc842e6a163c3b3e397411e6d23c787a4c6a11db6cb3",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
